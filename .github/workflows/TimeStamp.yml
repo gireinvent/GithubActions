@@ -1,0 +1,11 @@
+name: Time Stamp
+on: push
+jobs:
+ getTimeStamp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get current date
+        id: get_current_date
+        run: |
+         echo "::set-output name=currentdate::$(date +'%Y-%m-%d')"
+         echo "${{ steps.date.outputs.date }}"
