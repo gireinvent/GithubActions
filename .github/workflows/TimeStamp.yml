@@ -7,7 +7,7 @@ jobs:
       - name: Get current date
         id: get_current_date
         run: |
-         echo "currentdate=$(time +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+         echo "currentdate=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
       - name: Get Output
         id: getoutput
         run: |
